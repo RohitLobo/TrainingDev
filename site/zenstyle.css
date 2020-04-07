@@ -1,0 +1,20 @@
+.blue{
+    color:blue;
+    font-size: 20px;
+    width: 500px;
+}
+
+.green{
+    color:green;
+    font-size: 20px;
+    width: 500px;
+}
+h1{
+    color:rgb(66, 0, 128);
+    text-align: center;
+}
+#subheader{
+    font-size: 20px;
+    color:hotpink;
+    opacity:.6;
+}
