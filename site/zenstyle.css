@@ -29,3 +29,23 @@ h1{
     text-transform: lowercase;
     text-align: right;
 }
+
+body{
+    margin:0;
+    padding:0;
+}
+
+#box
+{
+    background-color: grey;
+    padding:10px 10px 10px 10px;
+    border:3px solid;
+    margin:40px;
+    box-sizing: border-box;
+    
+}
+
+#content
+{
+    background-color: green;
+}
