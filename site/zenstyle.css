@@ -30,22 +30,44 @@ h1{
     text-align: right;
 }
 
+
+*{
+    box-sizing: border-box;
+    
+}
+
 body{
     margin:0;
     padding:0;
 }
 
+
 #box
 {
     background-color: grey;
     padding:10px 10px 10px 10px;
-    border:3px solid;
-    margin:40px;
-    box-sizing: border-box;
+    border:10px solid;
+    margin-bottom: 20px;
+    
+    
+    
+    
+}
+
+#box2
+{
+    background-color: grey;
+    padding:10px;
+    border:10px solid;
+    margin-top: 30px;
+    
+    
+    
     
 }
 
 #content
 {
     background-color: green;
+    
 }
