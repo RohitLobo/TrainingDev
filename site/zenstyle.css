@@ -73,3 +73,12 @@ body{
     background-color: green;
     
 }
+
+#bg
+{
+    
+    width: 500px;
+    height: 500px;
+    
+    background: url(haruki.png) no-repeat blue top;
+}
