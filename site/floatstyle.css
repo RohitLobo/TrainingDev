@@ -1,0 +1,44 @@
+*
+{
+    box-sizing: border-box;
+}
+
+
+div
+{
+background-color: rgba(136, 237, 255, 0.719);
+
+}
+
+p
+{
+    width:50%;
+    border:solid 2px;
+    text-align: center;
+    float:left;
+    
+    padding:10px;
+    
+    
+}
+
+
+
+#p1
+{
+background-color:rgb(149, 35, 255);
+
+
+}
+
+#p2
+{
+    background-color: rgb(173, 104, 149, 68);
+    
+}
+
+
+section
+{
+clear:both;
+}
