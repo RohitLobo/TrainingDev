@@ -1,0 +1,62 @@
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+div
+{
+background-color: rgba(136, 237, 255, 0.719);
+position: relative;
+top:60px;
+
+}
+
+p
+{
+    width:50px;
+    border:solid 2px;
+    height: 50px;
+    margin-bottom: 15px;
+    
+    padding:10px;
+    
+    
+}
+
+
+
+#p1
+{
+    
+background-color:rgb(149, 35, 255);
+position: relative;
+top:65px;
+left:65px;
+
+
+}
+
+#p2
+{
+    background-color: rgb(173, 104, 149, 68);
+    
+}
+#p3
+{
+    background-color:#F23; 
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#p4
+{
+    background-color: #ff2288; 
+}
+
+
