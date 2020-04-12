@@ -1,0 +1,78 @@
+/* Desktop =  992px and above , tablet :768px and 991px, mobile <767px.*
+/*Desktop =3 sections equal amount of space*/
+/*Tablet = 2 sections on first row, 3rd section entire row*/
+/*mobile = one section /row */
+/* border for title and section 1px thick*/
+/*heading=75 % and title =25% than text*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+body{
+    font-size:50px;
+    
+}
+
+h1
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:75%;
+    text-align: center;
+}
+
+.col-1,.col-2,.col-3{
+    
+    background-color: skyblue;
+    border: 3px black solid ;
+    float: left;
+    padding:15px;
+    font-size: 25%;
+    margin-right: 15px;
+    width:32.01%;
+    position: relative;
+    
+}
+
+p
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    
+    
+    
+}
+
+#big-container{
+    margin-left:20px;
+    margin-right: 20px;
+    width:100%;
+}
+
+div>h2
+{
+    border:1px solid rgb(27, 11, 11);
+    padding:10px;
+    background-color: red;
+    text-align: center;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.rec1
+{
+    background-color: #d59898;
+}
+
+.rec2
+{
+    background-color:#c14543;
+    color: white;
+}
+
+.rec3
+{
+    background-color: #E5D198;
+}
