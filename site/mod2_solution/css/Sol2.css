@@ -22,18 +22,20 @@ h1
     text-align: center;
 }
 
-.col-1,.col-2,.col-3{
+.col-lg-3,.col-md-2,.col-md-1,.col-sm-1{
     
     background-color: skyblue;
     border: 3px black solid ;
     float: left;
     padding:10px;
     font-size: 25%;
-    margin-right: 15px;
-    width:32.01%;
+    margin:5px;
+    
     position:relative;
     
 }
+
+
 
 .content
 {
@@ -77,3 +79,25 @@ h1
 {
     background-color: #E5D198;
 }
+
+@media(min-width:992px)
+{
+    .col-lg-3
+    {
+        width:32.01%;
+    }
+}
+
+@media(min-width:768px) and (max-width:992px)
+{
+    .col-md-2
+    {
+        width:48%;
+    }
+
+    .col-md-1
+    {
+        width:98%;
+    }
+}
+
