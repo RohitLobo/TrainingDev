@@ -49,8 +49,7 @@ h1
 }
 
 #big-container{
-    margin-left:20px;
-    margin-right: 20px;
+    
     width:100%;
 }
 
@@ -92,7 +91,7 @@ h1
 {
     .col-md-2
     {
-        width:48%;
+        width:48.5%;
     }
 
     .col-md-1
