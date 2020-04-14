@@ -25,13 +25,32 @@ h1
 .row{
     
     width:100%;
+    margin:20px;
     
 }
 
-.col-lg-3
+
+.col-xl-3,.col-lg-3,.col-md-11,.col-md-6,.col-xl-4,.col-md-5
 {
     background-color: skyblue;
     border: 2px solid black;
+    position: relative;
+    margin:10px;
+}
+
+.rec1,.rec2,.rec3{
+    border:2px solid black;
+    position: absolute;
+    top:0;
+    right:0;
+    font-size:25%;
+}
+
+.content
+{
+    font-size:50%;
+    margin-top:50px;
+
 }
 
 .rec1
@@ -49,4 +68,3 @@ h1
 {
     background-color: #E5D198;
 }
-
