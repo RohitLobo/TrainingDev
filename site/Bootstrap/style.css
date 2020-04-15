@@ -10,13 +10,38 @@ body{
     background-color:#f6b319;
     border-radius: 0;
     border:0;
-   
+    font-family: 'Pacifico', cursive;
+    padding:25px;
+    
 }
 
-#logo-img
+#header-nav h1:hover,#header-nav h1:focus
 {
-    background: url("lvfactory.jpg") no-repeat;
-    width:200px;
-    height:150px;
-    margin:10px 15px 10px 0px;
+color:yellowgreen;  
+text-decoration: none;
+
 }
+
+#brand-text
+{
+    margin-left:10px;
+}
+
+#brand-text h1
+{
+    text-shadow: 2px 1px 3px;
+    text-transform: uppercase;
+    
+}
+
+#brand-text p{
+line-height: 0.75;
+}
+
+
+#link
+{
+    border:2px solid green;
+    
+}
+
