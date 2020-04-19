@@ -23,7 +23,38 @@ text-decoration: none;
 
 }
 
+#nav-list
+{
+    margin-top:10px;
+}
 
+#nav-list a{
+    color: #951c49;
+    text-align: center;
+  
+}
+#nav-list span{
+    font-size: 1.8em;
+}
+
+#nav-list a:hover{
+    background:#e7e7e7;
+
+
+}
+
+
+
+#phone a{
+    
+    padding-bottom: 0px;
+}
+
+#phone div{
+    color:#557c3e;
+    text-align: center;
+   
+}
 
 #brand-text h1
 {
@@ -48,3 +79,16 @@ line-height: 0.75;
     font-size: 20px;
 }
 
+#menutoggle li {
+    border:0.5px solid #951c49 ;
+    border-radius: 10px;
+    margin:2px;
+}
+
+.navbar-toggle{
+    border:1px solid #951c49 ;
+}
+
+#header-nav~div {
+margin-left:10px;
+}
