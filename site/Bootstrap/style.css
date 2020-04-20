@@ -8,8 +8,7 @@ body{
 #header-nav
 {
     background-color:#f6b319;
-    border-radius: 0;
-    border:0;
+    
     font-family: 'Pacifico', cursive;
     padding:25px;
     width:auto;
@@ -43,7 +42,7 @@ text-decoration: none;
 
 }
 
-@media(min-width:200px) and (max-width:705px){
+@media(min-width:200px) and (max-width:757px){
     #phone{
         
         text-align: center;
@@ -74,15 +73,15 @@ text-decoration: none;
    
 }
 
-#brand-text h1
+.navbar-brand div
 {
-    text-shadow: 2px 1px 3px;
+    
     text-transform: uppercase;
     
 }
 
-#brand-text p{
-line-height: 0.75;
+.navbar-brand div{
+    line-height: 0.75;
 }
 
 
@@ -94,13 +93,19 @@ line-height: 0.75;
 
 #menutoggle a
 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
-
+#menutoggle span{
+    font-size: 1em;
+    margin-right: 5px;
+}
 
 .navbar-toggle{
     border:1px solid #951c49 ;
 }
 
 
+button{
+    align-items: center;
+}
