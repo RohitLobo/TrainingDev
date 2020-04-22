@@ -36,26 +36,15 @@ text-decoration: none;
     font-size: 1.8em;
 }
 
-#nav-list a:hover{
+#nav-item a:hover{
     background:#e7e7e7;
 
-
-}
-
-@media(min-width:200px) and (max-width:757px){
-    #phone{
-        
-        text-align: center;
-        width: 100%;
-    }
-    #phone span, #phone div{
-        font-size: 35px;
-    }
 }
 
 #phone{
     
     font-size: 25px;
+    
 }
 
 #phone span
@@ -72,6 +61,8 @@ text-decoration: none;
     
    
 }
+
+
 
 .navbar-brand div
 {
@@ -105,7 +96,39 @@ text-decoration: none;
     border:1px solid #951c49 ;
 }
 
+.jumbotron{
+    border:2px solid #3F0c1F;
+        box-shadow: 0 0 50px #3F0c1F;
+}
 
-button{
-    align-items: center;
+
+@media(min-width:762px){
+.jumbotron{
+background:url('lvfactjumbo.jpg') no-repeat ;
+height:960px;
+width:960px;
+
+}
+}
+
+@media(max-width:761px){
+    .jumbotron{
+    margin-top: 10px;
+    padding:0px;   
+    
+    }
+
+
+
+@media(max-width:757px){
+    #phone{
+        
+        text-align: center;
+        width: 100%;
+        border:2px solid #3F0c1F;
+        box-shadow: 0 0 50px #3F0c1F;
+    }
+    #phone span, #phone div{
+        font-size: 35px;
+    }
 }
