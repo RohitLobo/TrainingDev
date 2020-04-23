@@ -102,6 +102,47 @@ text-decoration: none;
 }
 
 
+
+#menu-tile, #specials-tile, #map-tile
+{
+height:250px;
+width:100%;
+margin:0 auto 15px;
+position:relative;
+border:2px solid #3F0c1F;
+overflow: hidden;
+}
+
+
+#menu-tile:hover,#specials-tile:hover, #map-tile:hover
+{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile span,#specials-tile span , #map-tile span{
+ 
+ position: absolute;   
+ bottom: 0;
+ right:0;
+ text-align: center;
+ width: 100%;
+ text-transform: uppercase;
+ background-color: black;
+ opacity:.8;
+ color: #f6b319
+ font-size 1.6em;   
+}
+
+#menu-tile{
+    background:url('menu.jpg') no-repeat;
+    background-position:center;
+}
+
+#specials-tile{
+    background:url('specials 2.jpg' ) no-repeat;
+    background-position:center;
+}
+
 @media(min-width:762px){
 .jumbotron{
 background:url('lvfactjumbo.jpg') no-repeat ;
@@ -111,16 +152,12 @@ width:960px;
 }
 }
 
-@media(max-width:761px){
+@media(max-width:757px){
     .jumbotron{
     margin-top: 10px;
     padding:0px;   
     
     }
-
-
-
-@media(max-width:757px){
     #phone{
         
         text-align: center;
@@ -131,4 +168,10 @@ width:960px;
     #phone span, #phone div{
         font-size: 35px;
     }
+
+    #menu-tile, #specials-tile{
+        width:360px;
+        margin:0 auto 15px;
+    }
+
 }
