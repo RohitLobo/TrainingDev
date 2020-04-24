@@ -143,6 +143,43 @@ overflow: hidden;
     background-position:center;
 }
 
+#footer-container{
+    position:relative;
+    background-color: blanchedalmond;
+}
+
+#footer{
+    
+    padding:15px;
+    position:absolute;
+    top:20;
+
+}
+
+#horaires-tile , #avis-tile , #address-tile
+{
+    border:1px solid #3F0c1F;
+    background:#222;
+    opacity:.8;
+    height:250px;
+    width:100%;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#horaires-tile span, #avis-tile span, #address-tile span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.6em;
+}
+
+#copyright{
+    position: absolute;
+    bottom:-5;
+    left:50;
+    right:50;
+}
+
+
 @media(min-width:762px){
 .jumbotron{
 background:url('lvfactjumbo.jpg') no-repeat ;
