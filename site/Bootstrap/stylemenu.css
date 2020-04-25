@@ -1,0 +1,187 @@
+body{
+    font-size: 16px;
+    color:#FFFF;
+    background-color:#61122F ;
+    font-family:'Oxygen', sans-serif;
+}
+
+#header-nav
+{
+    background-color:#f6b319;
+    
+    font-family: 'Pacifico', cursive;
+    padding:25px;
+    width:auto;
+    
+}
+
+#header-nav h1:hover,#header-nav h1:focus
+{
+color:yellowgreen;  
+text-decoration: none;
+
+}
+
+#nav-list
+{
+    margin-top:10px;
+}
+
+#nav-list a{
+    color: #951c49;
+    text-align: center;
+  
+}
+#nav-list span{
+    font-size: 1.8em;
+}
+
+#nav-item a:hover{
+    background:#e7e7e7;
+
+}
+
+#phone{
+    
+    font-size: 25px;
+    
+}
+
+#phone span
+{
+    color: #951c49;
+    text-align: center; 
+    
+}
+
+
+
+#phone div{
+    color:#557c3e;
+    
+   
+}
+
+
+
+.navbar-brand div
+{
+    
+    text-transform: uppercase;
+    
+}
+
+.navbar-brand div{
+    line-height: 0.75;
+}
+
+
+#link
+{
+    border:2px solid green;
+    
+}
+
+#menutoggle a
+{
+    font-size: 30px;
+}
+
+#menutoggle span{
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+.navbar-toggle{
+    border:1px solid #951c49 ;
+}
+
+.jumbotron{
+    border:2px solid #3F0c1F;
+        box-shadow: 0 0 50px #3F0c1F;
+}
+
+
+#title{
+    text-align: center;
+}
+
+#footer-nav{
+    position:relative;
+    width:auto;
+    
+}
+
+#footer{
+    
+    
+    position:absolute;
+    top:20;
+    
+
+}
+
+
+
+#horaires-tile , #avis-tile , #address-tile
+{
+    border:1px solid #3F0c1F;
+    background-color: #222;
+    opacity:.8;
+    height:250px;
+    width:100%;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#horaires-tile span,#avis-tile span, #address-tile span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.6em;
+}
+#avis-tile p
+{
+    font-size:1em;
+    font-style: italic;  
+    
+}
+
+#copyright{
+    position: absolute;
+    bottom:0;
+    left:50;
+    right: 50;
+}
+
+
+@media(min-width:762px){
+.jumbotron{
+background:url('lvfactjumbo.jpg') no-repeat ;
+height:960px;
+width:960px;
+
+}
+}
+
+@media(max-width:757px){
+    .jumbotron{
+    margin-top: 10px;
+    padding:0px;   
+    
+    }
+    #phone{
+        
+        text-align: center;
+        width: 100%;
+        border:2px solid #3F0c1F;
+        box-shadow: 0 0 50px #3F0c1F;
+    }
+    #phone span, #phone div{
+        font-size: 35px;
+    }
+
+    #menu-tile, #specials-tile{
+        
+        margin:0 auto 15px;
+    }
+
+}
