@@ -143,23 +143,27 @@ overflow: hidden;
     background-position:center;
 }
 
-#footer-container{
+#footer-nav{
     position:relative;
-    background-color: blanchedalmond;
+    width:auto;
+    
 }
 
 #footer{
     
-    padding:15px;
+    
     position:absolute;
     top:20;
+    
 
 }
+
+
 
 #horaires-tile , #avis-tile , #address-tile
 {
     border:1px solid #3F0c1F;
-    background:#222;
+    background-color: #222;
     opacity:.8;
     height:250px;
     width:100%;
@@ -167,16 +171,22 @@ overflow: hidden;
     text-align: center;
 }
 
-#horaires-tile span, #avis-tile span, #address-tile span{
+#horaires-tile span,#avis-tile span, #address-tile span{
     font-family: 'Times New Roman', Times, serif;
     font-size:1.6em;
+}
+#avis-tile p
+{
+    font-size:1em;
+    font-style: italic;  
+    
 }
 
 #copyright{
     position: absolute;
-    bottom:-5;
+    bottom:0;
     left:50;
-    right:50;
+    right: 50;
 }
 
 
