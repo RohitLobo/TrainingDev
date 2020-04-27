@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
     font-size: 16px;
     color:#FFFF;
@@ -143,21 +148,31 @@ overflow: hidden;
     background-position:center;
 }
 
-#footer-nav{
+#home-tile{
     position:relative;
-    width:auto;
+}
+
+#footer-nav{
+    margin-top:20px;
+    width:100%;
+         
+
     
 }
 
-#footer{
-    
-    
+/*#footer{
+        
     position:absolute;
     top:20;
-    
+    }*/
 
+#footer-nav h2 {
+    color:green;
 }
 
+hr{
+    border:0 solid green;
+}
 
 
 #horaires-tile , #avis-tile , #address-tile
@@ -171,10 +186,14 @@ overflow: hidden;
     text-align: center;
 }
 
-#horaires-tile span,#avis-tile span, #address-tile span{
+
+
+
+#horaires-tile p,#avis-tile p, #address-tile p{
     font-family: 'Times New Roman', Times, serif;
     font-size:1.6em;
 }
+
 #avis-tile p
 {
     font-size:1em;
