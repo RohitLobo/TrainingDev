@@ -171,7 +171,8 @@ overflow: hidden;
 }
 
 hr{
-    border:0 solid green;
+    border:1px solid green;
+    width:50%;
 }
 
 
@@ -184,6 +185,7 @@ hr{
     width:100%;
     line-height: 1.5em;
     text-align: center;
+    margin-bottom:0;
 }
 
 
