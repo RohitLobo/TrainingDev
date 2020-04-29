@@ -1,7 +1,6 @@
-*{
+*
+{
     box-sizing: border-box;
-    margin:0;
-    border:0;   
 }
 
 
@@ -161,34 +160,32 @@ text-decoration: none;
 
 
 .category-tile{
-    position: relative;
     width:200px;
-    height:200px;
+    height: 200px;
+    
+    position:relative;
     margin:0 auto 15px;
     
-    overflow: hidden;
-   
     
 }
 
-
 .category-tile:hover{
-    box-shadow: 0 1px 5px 1px #CCCCCC;
+    box-shadow: 0 0 50px #3F0c1F;
 }
 
-
-
 .category-tile span{
-    text-align: center;
-    position: absolute;
-    font-size: 1.2em;
-    bottom: 0;   
-    right:0;
     background-color: #222;
     width:100%;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    right:0;
     opacity: .8;
-    color:white;
-
+    color: white;
+    overflow: hidden;
+    text-transform: uppercase;
+    
+    
 }
 
 
