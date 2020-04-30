@@ -42,8 +42,8 @@ text-decoration: none;
     font-size: 1.8em;
 }
 
-#nav-list a:hover,{
-    background-color:#e7e7e7;
+#nav-item a:hover{
+    background:#e7e7e7;
 
 }
 
@@ -158,38 +158,63 @@ text-decoration: none;
     right: 50;
 }
 
-
-.category-tile{
-    width:200px;
-    height: 200px;
-    
-    position:relative;
-    margin:0 auto 15px;
-    
-    
+#title{
+    margin-bottom: 30px;
 }
 
-.category-tile:hover{
-    box-shadow: 0 0 50px #3F0c1F;
+#title span{
+    margin-left:50px;
 }
 
-.category-tile span{
-    background-color: #222;
-    width:100%;
-    text-align: center;
-    position: absolute;
-    bottom:0;
-    right:0;
-    opacity: .8;
-    color: white;
+
+#product-container{
+    margin-bottom:25px;
+}
+
+
+#product-container hr{
+    background-color:white;
+    width: 80%;
+}
+
+#product-container .product-price{
+    text-align:center;
+    font-size: 1.1em;
+    margin-right: -15px;
+   
+}
+
+#product-container .product-price span{
+    font-size: .6em;
+}
+
+.product-image{
+    border:2px solid #3F0c1F;
     overflow: hidden;
-    text-transform: uppercase;
-    
-    
+    margin:0 auto auto 20px;
+    max-width: 250px;
+    position: relative;
+}
+
+.product-image div{
+    position: absolute;
+    bottom: 30;
+    right: -20;
+    text-align:center;
+    background-color:green;
+    width: 80px;
 }
 
 
+.product-description{
+    padding-right: 30px;
+    font-style: italic;
+}
 
+h3.product.title{
+    margin:0 0 10px;
+
+}
 @media(max-width:757px){
     
     #phone{
