@@ -5,6 +5,7 @@
 }
 
 
+
 body{
     font-size: 16px;
 }
@@ -34,8 +35,9 @@ button{
 }
 
 #nav-items li a:hover{
-  background-color:rgb(73, 113, 243);
-    
+  background-color:white;
+  color: #343A40;  
+  font-weight: 500;
 }
 
 #nav-items  hr{
@@ -50,7 +52,7 @@ button{
 }
 
 #main-container h2{
-    text-align: center;
+    
     font-family: 'Pacifico', cursive;
     margin-top:10px;
     padding:5px;
