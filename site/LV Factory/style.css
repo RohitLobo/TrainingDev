@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    border:0;
+    padding:0;
+}
+
+
+
+body{
+    font-size: 16px;
+}
+
+.navbar-brand h1{
+    color: white;
+    font-size:1.2em;
+    
+}
+
+.navbar-toggler{
+    border:1px solid white;
+}
+
+button{
+    border:1px solid white;
+}
+
+
+    
+
+#nav-items li a{
+    color: white;
+    font-size:1em;
+    text-align: center;
+    
+}
+
+#nav-items li a:hover{
+  background-color:white;
+  color: #343A40;  
+  font-weight: 500;
+}
+
+#nav-items  hr{
+    border:.5px solid rgb(240, 56, 56);
+    width:60%;
+}
+
+#card-content{
+    background-color: wheat;
+    height:auto;
+    border:1px solid black;
+}
+
+#main-container h2{
+    
+    font-family: 'Pacifico', cursive;
+    margin-top:10px;
+    padding:5px;
+    font-size:2.0em;
+}
+
+#card-content h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.6em;
+}
+
+#card-content p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:.9em;
+}
+
+#footer-container{
+    background-color:#343A40 ;
+    width:100%;
+}
+
+#footer-card{
+    color:wheat;
+    width:100%;
+    
+    margin-top:2px;
+    padding:2px;
+}
+
+
+#footer-card h2{
+    font-size:1.4em;
+    font-family: 'Pacifico', cursive;
+}
+
+#footer-card p{
+    font-size: 1em;
+}
+
+#footer-card a{
+    text-decoration: none;
+    color:wheat;
+}
+
+
+#footer-card a:hover{
+background-color:wheat;
+  color: #343A40;  
+  font-weight: 500;
+}
+
+#footer-container   hr{
+    border:.5px solid rgb(240, 56, 56);
+    width:60%;
+    display: ml-auto d-md-none;
+}
