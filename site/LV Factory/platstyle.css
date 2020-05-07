@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    border:0;
+    padding:0;
+}
+
+
+
+body{
+    font-size: 16px;
+}
+
+.navbar-brand h1{
+    color: white;
+    font-size:1.2em;
+    
+}
+
+.navbar-brand h1:hover{
+    background-color:white;
+    color: #343A40;  
+    font-weight: 500;
+  }
+
+.navbar-toggler{
+    border:1px solid white;
+}
+
+button{
+    border:1px solid white;
+}
+
+#social-links{
+    border:2px solid wheat;
+    
+}
+
+
+/*#social-links:hover{
+    color:#1673EA; - facebook
+    color:#1DA1F2; - twitter    
+    color:#DC2C6E; - insta
+}*/
+
+
+#nav-items li a{
+    color: white;
+    font-size:1em;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+#nav-items li a:hover{
+  background-color:white;
+  color: #343A40;  
+  font-weight: 500;
+}
+
+#nav-items li a:active{
+    background-color:red;  
+}
+
+#nav-items  hr{
+    border:.5px solid rgb(240, 56, 56);
+    width:60%;
+}
+
+#product-tile{
+    margin:0px 0px auto;
+}
+
+/*#product-tile{
+    border:1px yellow solid;
+    position: relative;
+}*/
+
+#product-image img{
+    box-shadow: -2px 2px 3px 1px rgba(52,58,64,1);
+    
+    border: 2px solid black;
+}
+
+#product-image {
+position: relative;
+}
+
+#product-description h3{
+ font-size: 1.2em;
+}
+
+#product-description p{
+ font-size:0.9em;
+}
+
+#product-price
+{
+    font-size: 1em;
+    
+    
+}
+
+#ajoutpanier:hover{
+    
+    text-decoration: none;
+    opacity: 0.8;
+   
+    
+   
+}
+
+
+#menu-id {
+    
+    width: 100%;
+    position: absolute;
+    color:#FFFBFB;
+    background-color: #343A40;
+    bottom: 0;
+    left:0;
+    right:0;
+    overflow: hidden;
+    
+}
+
+#main-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main-container h2{
+    
+    font-family: 'Pacifico', cursive;
+    
+    padding:5px;
+    font-size:2.0em;
+    
+}
+
+#footer-container{
+    
+    background-color:#343A40 ;
+    width:100%;
+    
+}
+
+#footer-card{
+    color:wheat;
+    width:100%;
+    
+    margin-top:2px;
+    padding:2px;
+}
+
+#footer-card h2{
+    font-size:1.4em;
+    font-family: 'Pacifico', cursive;
+}
+
+#footer-card p{
+    font-size: 1em;
+}
+
+#footer-card a{
+    text-decoration: none;
+    color:wheat;
+}
+
+
+#footer-card a:hover{
+background-color:wheat;
+  color: #343A40;  
+  font-weight: 500;
+  
+}
+
+#footer-container   hr{
+    border:.5px solid rgb(240, 56, 56);
+    width:60%;
+    
+}
