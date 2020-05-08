@@ -12,3 +12,9 @@ img{
     float: right;
     margin-left: 1em;
 }
+
+#myCanvas{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+}

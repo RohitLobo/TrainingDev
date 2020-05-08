@@ -9,7 +9,7 @@
 
 <body>
     
-    <section class='content'>
+    <!--<section class='content'>
         <h1>JS Trial run</h1>
         <img src='surfer.jpg' alt='comic_character_floating'>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. Nisi porta lorem mollis aliquam. Ante in nibh mauris cursus mattis molestie. Lacus sed viverra tellus in hac. Volutpat sed cras ornare arcu dui vivamus arcu felis. Lectus magna fringilla urna porttitor rhoncus. Nisl rhoncus mattis rhoncus urna neque viverra. Sed felis eget velit aliquet sagittis. Lorem ipsum dolor sit amet consectetur adipiscing elit. Augue lacus viverra vitae congue eu consequat ac felis donec.
@@ -17,8 +17,53 @@
             Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Posuere ac ut consequat semper. In tellus integer feugiat scelerisque varius. Vitae congue mauris rhoncus aenean vel. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Aenean et tortor at risus viverra adipiscing at in. Est placerat in egestas erat imperdiet sed euismod nisi. Accumsan in nisl nisi scelerisque eu ultrices vitae. Eget duis at tellus at urna condimentum. Urna et pharetra pharetra massa massa ultricies mi quis. Ac ut consequat semper viverra nam. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Dolor morbi non arcu risus quis varius quam quisque id.
             
             Vitae auctor eu augue ut lectus arcu bibendum at varius. Urna et pharetra pharetra massa massa ultricies mi quis. Aliquam ultrices sagittis orci a. Suspendisse in est ante in nibh mauris. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Nibh venenatis cras sed felis eget velit aliquet. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Fames ac turpis egestas maecenas. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Morbi tristique senectus et netus et malesuada fames ac.</p> 
-    </section>
+    </section>-->
 
+
+    <div>
+        <canvas id='myCanvas'></canvas>
+    </div>
+<script>
+
+    const canva=document.getElementById("myCanvas");
+    const context=canva.getContext("2d");
+    
+    /*context.beginPath()
+    
+    context.arc(150, 75, 30, 0, 2 * Math.PI);
+    context.fillStyle="red";
+    context.fill();
+    context.stroke();*/
+    let x=50;
+    let y=50;
+   
+    function blob(xloc,yloc,size,color){
+        context.clearRect(0,0,canva.width,canva.height);
+        context.beginPath()
+        
+        context.arc(xloc, yloc, size, 0, 2 * Math.PI);
+        context.fillStyle=color;
+        context.fill();
+        context.stroke();
+        x++;
+        y++;
+    }
+    /**/
+
+    setInterval(function(){
+        blob(x,y,30,"red");
+        
+    },100);
+
+    
+    
+    
+    
+    
+
+
+
+</script>    
 
 </body>    
 </html>

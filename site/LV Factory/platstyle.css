@@ -17,9 +17,8 @@ body{
 }
 
 .navbar-brand h1:hover{
-    background-color:white;
-    color: #343A40;  
-    font-weight: 500;
+    opacity: .8;  
+    
   }
 
 .navbar-toggler{
@@ -54,7 +53,7 @@ button{
 #nav-items li a:hover{
   background-color:white;
   color: #343A40;  
-  font-weight: 500;
+  
 }
 
 #nav-items li a:active{
@@ -66,8 +65,10 @@ button{
     width:60%;
 }
 
+
 #product-tile{
-    margin:0px 0px auto;
+    height: auto;
+    
 }
 
 /*#product-tile{
@@ -75,18 +76,19 @@ button{
     position: relative;
 }*/
 
-#product-image img{
-    box-shadow: -2px 2px 3px 1px rgba(52,58,64,1);
-    
-    border: 2px solid black;
-}
+
 
 #product-image {
 position: relative;
+box-shadow: -2px 2px 3px 1px rgba(52,58,64,1);
+
+
+
 }
 
 #product-description h3{
  font-size: 1.2em;
+ margin-top:5px;
 }
 
 #product-description p{
@@ -100,11 +102,20 @@ position: relative;
     
 }
 
+
+#ajoutpanier{
+border:1px solid black;
+border-radius: 5px;
+color:#FFFFFF;
+background-color:#343A40;
+
+}
+
 #ajoutpanier:hover{
     
     text-decoration: none;
     opacity: 0.8;
-   
+    
     
    
 }
