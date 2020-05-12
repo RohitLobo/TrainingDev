@@ -22,7 +22,14 @@
     console.log(multiplyBy3(10));*/
     
 
-    var a=7;
-    var b=a;
-    console.log("value of b is:"+ b);
-    console.log("value of a is:"+ a);
+  //  var a=7;
+  //   var b=a;
+  //   console.log("value of b is:"+ b);
+  //   console.log("value of a is:"+ a);
+
+
+  // canvas=document.getElementById('myCanvas');
+  // context=canvas.getContext("2d");
+  // context.moveTo(0,0);
+  // context.lineTo(100,100);
+  // context.stroke();

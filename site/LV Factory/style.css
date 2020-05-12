@@ -155,9 +155,9 @@ button{
 
 
 #footer-card a:hover{
-background-color:wheat;
-  color: #343A40;  
-  font-weight: 500;
+    background-color:white;
+    color: #343A40; 
+    transition-duration: 0.6s;
   
 }
 

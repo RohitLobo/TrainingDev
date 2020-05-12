@@ -3,7 +3,7 @@
     <title>JS Trial run</title>
     <link rel='stylesheet' href='style.css'>
     <meta charset="utf-8">
-    <script src='script.js'></script>
+    
     
 </head>
 
@@ -23,47 +23,193 @@
     <div>
         <canvas id='myCanvas'></canvas>
     </div>
+ 
+
 <script>
+    const canvas=document.getElementById('myCanvas');
+    const context=canvas.getContext("2d");
+    
 
-    const canva=document.getElementById("myCanvas");
-    const context=canva.getContext("2d");
+    let blobs=new Array();
+    const colours=new Array("red","orange","yellow","blue","purple","black","pink");
+    const blobCount=10;
+    let x=100
+    let y=75
+
+    let xChange=1;    //intisialize variables for direction switch
+    let yChange=1;
+
+
+    // // using prototype
+    // function Blob(size,color){
+    //     this.size=size;
+    //         this.color=color;
+    //         this.x=Math.random()*canvas.width;
+    //         this.y=Math.random()*canvas.height;
+    //         this.xChange=1;
+    //         this.yChange=1;
+    // }
+
+    // Blob.prototype.move=function()  {
+    //     if (this.y>=canvas.height || this.y<-1){
+    //         this.yChange*=-1                     //conditions to switch directions
+            
+    //         }
+
+    //         else if (this.x>=canvas.width || this.x<-1)
+    //         {
+            
+    //             this.xChange*=-1;
+    //         }
+
+
+    //         this.y+=this.yChange;
+    //         this.x+=this.xChange;
+    //         }
     
-    /*context.beginPath()
+    // Blob.prototype.draw=function(){
+    //         context.beginPath();
+    //         context.arc(this.x,this.y,this.size,0,2*Math.PI);
+    //         context.fillStyle=this.color;
+    //         context.fill();
+    //         context.stroke();   
+    //         }   
     
-    context.arc(150, 75, 30, 0, 2 * Math.PI);
-    context.fillStyle="red";
-    context.fill();
-    context.stroke();*/
-    let x=50;
-    let y=50;
-   
-    function blob(xloc,yloc,size,color){
-        context.clearRect(0,0,canva.width,canva.height);
-        context.beginPath()
-        
-        context.arc(xloc, yloc, size, 0, 2 * Math.PI);
-        context.fillStyle=color;
-        context.fill();
-        context.stroke();
-        x++;
-        y++;
+
+
+        //    using class 
+    class Blob{                           
+        constructor(size,color){
+            this.size=size;
+            this.color=color;
+            this.x=Math.random()*canvas.width;
+            this.y=Math.random()*canvas.height;
+            this.xChange=1;
+            this.yChange=1;
+        }
+
+        move(){
+            if (this.y>=canvas.height || this.y<-1){
+            this.yChange*=-1                     //conditions to switch directions
+            
+            }
+
+            else if (this.x>=canvas.width || this.x<-1)
+            {
+            
+                this.xChange*=-1;
+            }
+
+
+            this.y+=this.yChange;
+            this.x+=this.xChange;
+            }
+
+         draw(){
+            context.beginPath();
+            context.arc(this.x,this.y,this.size,0,2*Math.PI);
+            context.fillStyle=this.color;
+            context.fill();
+            context.stroke();   
+            }   
+
+
     }
-    /**/
 
-    setInterval(function(){
-        blob(x,y,30,"red");
+
+
+    // const newBlob0= new Blob(25,"green");
+    // const newBlob1= new Blob(25,"red");
+    // const newBlob2= new Blob(25,"blue");
+    // const newBlob3= new Blob(25,"orange");
+    
+    
+    // blobs.push(newBlob0);
+    // blobs.push(newBlob1);
+    // blobs.push(newBlob2);
+    // blobs.push(newBlob3);
+
+    function radomChoice(arr){
+        return arr[Math.floor(Math.random()*colours.length)];
+    }
+
+
+    for(let i=0;i<blobCount;i++){
+        let randomColour=radomChoice(colours);
+        blobs.push(new Blob(25,randomColour))
+    }
+
+
+    function canvasDraw(){
+        context.clearRect(0,0,canvas.width,canvas.height);
+
+        blobs.forEach(function(obj){
+            obj.draw();
+            obj.move();
+        })
+    }
+
+    setInterval(canvasDraw,10);
+
+
+//     function circle (xloc,yloc,size,color){
+//         context.clearRect(0,0,canvas.width,canvas.height);            
+//         context.beginPath();
+//         context.arc(xloc,yloc,size,0,2*Math.PI);
+//         context.fillStyle=color;
+//         context.fill();
+//         context.stroke();        
         
-    },100);
+//         if (y>=canvas.height || y<-1){
+//             yChange*=-1                     //conditions to switch directions
+            
+//         }
+
+//         else if (x>=canvas.width || x<-1)
+//         {
+           
+//             xChange*=-1;
+//         }
+
+
+//         y+=yChange;
+//         x+=xChange;
+        
+//     }
+
+
+
+// setInterval(function(){
+//     circle(x,y,40,"red")
+// },10);
+
+
+
+
+// circle(50,75,40,"red");
+// circle(150,75,40,"green");
+// circle(250,75,40,"blue");
+
+    // context.arc(50,75,40,0,2*Math.PI);
+    // context.fillStyle="red";
+    // context.fill();
+    // context.stroke();
+
+    // context.beginPath();
+    // context.arc(150,75,40,0,2*Math.PI);
+    // context.fillStyle="green";
+    // context.fill();
+    // context.stroke();
 
     
-    
-    
-    
-    
+    // context.beginPath();
+    // context.arc(250,75,40,0,2*Math.PI);
+    // context.fillStyle="blue";
+    // context.fill();
+    // context.stroke();
 
+</script>
 
-
-</script>    
 
 </body>    
 </html>
