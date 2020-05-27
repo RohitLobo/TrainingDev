@@ -1,5 +1,6 @@
 #left-content{
-    background-color: greenyellow;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(76,76,76,1) 45%, rgba(0,0,0,1) 56%);
     height:90vh;
     position: relative;
     top:40px;
@@ -7,8 +8,25 @@
     
 }
 
+#right-content{
+    font-size: 5em;
+    color:rgb(74, 143, 60);
+    position:absolute;
+    top:20%;
+}
+
+#right-content span{
+    color:rgb(255, 229, 81)
+}
+
+#right-content div{
+    color:#DB654A;
+}
+
+
 #logo{
-    background-color: red;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(76,76,76,1) 45%, rgba(0,0,0,1) 56%);
     height:10vh;
     position: relative;
     /* top:20px; */
@@ -26,6 +44,10 @@
 #sign-in{
     position: absolute;
     top:100px;
+}
+
+form div label{
+    color:#DB654A
 }
 
 form button{
@@ -53,7 +75,7 @@ width:100%;
 }
 
 #bar hr{
-    border: black 0.5px solid;
+    border: #DB654A 0.5px solid;
     width: 85%;
 }
 
@@ -72,12 +94,14 @@ footer{
     position: absolute;
     text-align: center;
     top:75vh;
+    color:#DB654A
     
 }
 
 
 #left-wrapper{
-    background-color: blueviolet;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(76,76,76,1) 45%, rgba(0,0,0,1) 56%);
     height: 100vh ;
     
     
@@ -95,129 +119,5 @@ footer{
 }
 
 
-@media (min-width: 578px) and (max-width:766px){
-    #left-content{
-        background-color: palevioletred;
-        position: relative;
-     
-        
-
-    }
-
-}
 
 
-@media (min-width: 769px){
-    #left-content{
-        background-color: rgb(61, 199, 169) ;
-       
-
-    }
-    #logo{
-        /* left:40px; */
-        
-        background-color: peachpuff;
-    }
-}
-
-
-/* @media (max-height: 568px){
-    #bar hr{
-        position: absolute;
-        
-        top:30px;
-        
-        width: 85%;
-    }
-    
-    #account{
-        
-        bottom:20px;
-        
-    }
-
-}
-
-
-@media (min-height: 640px){
-    #bar hr{
-        position: absolute;
-        bottom: 50px;
-        right:30px;
-        width: 85%;
-    }
-    footer{
-        top:450px;
-    }
-    
-}
-
-
-@media (min-height: 731px){
-    #bar hr{
-        position: absolute;
-        bottom: 80px;
-        
-        width: 85%;
-    }
-
-    #account{
-        
-        bottom:170px;
-        
-    }
-
-    footer{
-        top:600px;
-    }
-    
-}
-
-
-
-@media (min-height: 810px){
-    #bar hr{
-        position: absolute;
-        bottom: 260px;
-        
-        width: 85%;
-    }
-    
-    #account{
-        
-        bottom:200px;
-        
-    }
-
-}
-
-
-@media (min-height: 900px){
-    #bar hr{
-        position: absolute;
-        bottom: 300px;
-        
-        width: 85%;
-    }
-
-    #account{
-        bottom: 250px;
-    }
-    
-}
-
-
-@media (min-height: 1000px){
-    #bar hr{
-        position: absolute;
-        bottom: 400px;
-        
-        width: 85%;
-    }
-
-    #account{
-        bottom: 350px;
-    }
-    
-}
- */
