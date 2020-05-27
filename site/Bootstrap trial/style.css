@@ -46,7 +46,9 @@ width:100%;
 
 #bar{
     position: absolute;
-    bottom:100px;
+    bottom:20vh;
+    display: block;
+    text-align: center;
     
 }
 
@@ -64,6 +66,13 @@ width:100%;
 
 #account button{
     width:75%;
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    top:75vh;
+    
 }
 
 
@@ -112,23 +121,33 @@ width:100%;
 }
 
 
-@media (max-height: 568px){
+/* @media (max-height: 568px){
     #bar hr{
         position: absolute;
-        top:20px;
+        
+        top:30px;
         
         width: 85%;
     }
     
+    #account{
+        
+        bottom:20px;
+        
+    }
+
 }
 
 
 @media (min-height: 640px){
     #bar hr{
         position: absolute;
-        bottom: 20px;
+        bottom: 50px;
         right:30px;
         width: 85%;
+    }
+    footer{
+        top:450px;
     }
     
 }
@@ -141,6 +160,16 @@ width:100%;
         
         width: 85%;
     }
+
+    #account{
+        
+        bottom:170px;
+        
+    }
+
+    footer{
+        top:600px;
+    }
     
 }
 
@@ -149,9 +178,46 @@ width:100%;
 @media (min-height: 810px){
     #bar hr{
         position: absolute;
-        bottom: 160px;
+        bottom: 260px;
         
         width: 85%;
     }
     
+    #account{
+        
+        bottom:200px;
+        
+    }
+
 }
+
+
+@media (min-height: 900px){
+    #bar hr{
+        position: absolute;
+        bottom: 300px;
+        
+        width: 85%;
+    }
+
+    #account{
+        bottom: 250px;
+    }
+    
+}
+
+
+@media (min-height: 1000px){
+    #bar hr{
+        position: absolute;
+        bottom: 400px;
+        
+        width: 85%;
+    }
+
+    #account{
+        bottom: 350px;
+    }
+    
+}
+ */
