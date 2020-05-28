@@ -108,7 +108,7 @@ footer{
 }
 
 #right-wrapper{
-    border:1px yellow black;
+    
     background-color:palevioletred;
     background-image: url('sign-in.jpg');
     background-position: center;
@@ -149,3 +149,10 @@ footer{
     
 }
 
+#cookie-button button:hover{
+    background-color:#DB654A;
+    color: #000000;
+    border:1px solid yellow;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}

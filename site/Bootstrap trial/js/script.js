@@ -1,4 +1,11 @@
 $(window).ready(function() {
-    console.log("hello fuckers!")
-  });
+    $("#cookie-button button").click(function(event){
+        $("#cookie-container").hide();
+
+    });
   
+
+
+
+});
+ 
