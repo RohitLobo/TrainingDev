@@ -3,6 +3,12 @@ $(window).ready(function() {
         $("#cookie-container").hide();
 
     });
+   
+    // $("#loading-prog").append($("#loading-prog").width())
+     
+    
+    
+    
   
 
 

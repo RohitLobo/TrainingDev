@@ -124,6 +124,7 @@ footer{
     position:fixed;
     bottom:0;
     background-color: #000000;
+    display:none;
 }
 
 #cookie-content{
@@ -155,4 +156,34 @@ footer{
     border:1px solid yellow;
     font-weight: bold;
     transition-duration: 0.2s;
+}
+
+
+
+
+#loading-bar{
+    
+    height:2vw;
+    
+    
+    
+    
+    
+}
+
+#loading-prog{
+    border:1px solid black;
+    background-color: salmon;
+    /* width:100%; */
+    height:2em;
+    animation-name: widthChanger;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+
+@keyframes widthChanger{
+    from{width:0%;}
+    to{width:100%;}
 }

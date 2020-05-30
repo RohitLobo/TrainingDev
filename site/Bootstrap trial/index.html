@@ -15,23 +15,23 @@
     <script src='js/bootstrap.min.js'></script>
     
 
-    <div class='container-fluid' id='main-container'>
+    <div class='container-fluid' id='main-container'>  <!---main container to hold other elements-->
         <div class='row'>
-            <div class='col-md-5 col-sm-12' id='left-wrapper'>
-                <!-- <h1 class='text-center'>left-wrapper</h1> -->
+            <div class='col-md-5 col-sm-12' id='left-wrapper'> <!---container for the left side of the page -->
+                
                 <div class='row'>
 
                 
-                    <div id='left-content' class='col-md-12 col-sm-12'>
+                    <div id='left-content' class='col-md-12 col-sm-12'> <!---container for contents on the left side of the page -->
                         <div class='row'>
-                            <div class='col-md-12' id='logo'>
+                            <div class='col-md-12' id='logo'>   <!---Logo container -->
                                 <img src='logo.jpg' > 
                             </div>
 
-                            <div class='col-md-12' id='sign-in'>
+                            <div class='col-md-12' id='sign-in'> <!---sign-up form container -->
                                 <form>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address or Username</label>
+                                        <label for="exampleInputEmail1">Email address</label>
                                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                         <small id="emailHelp" class="form-text text-muted">You can be sure we'll share your email with everyone.</small>
                                     </div>
@@ -44,34 +44,34 @@
                                 </form>
                             </div>
 
-                            <div class='col-md-12' id='links'>
+                            <div class='col-md-12' id='links'> <!---Links below sign-in form -->
                                 <a href=''>Forgot Password?</a>
                                 <a href=''>Sign in with your company or school</a>
                             </div>
 
-                            <div class='col-md-12' id='bar'>
+                            <div class='col-md-12' id='bar'> <!---Horizontal bar -->
                                 <hr ></hr>
                             </div>
-                            <div class='col-md-12' id='account'>
+                            <div class='col-md-12' id='account'> <!---Account creation -->
                                 <button type="button" class="btn btn-secondary">Create account</button>
                             </div> 
-                            <footer class='col-md-12'>
+                            <footer class='col-md-12'> <!---Footer with copyright -->
                                 Copyright © 2020 Road Loafer Productions <br>
                                 All rights reserved.
                             </footer>
 
-                        </div>
+                        </div><!--end of row in left content-->
 
                         
                         
-                    </div>  
+                    </div>  <!--end of left content-->
                     
-                </div>
-            </div>
+                </div> <!--end of row in left wrapper-->
+            </div><!--end of left wrapper-->
 
-            <div class='col-md-7' id='right-wrapper' >
+            <div class='col-md-7' id='right-wrapper' > <!---Container for right side of the page has background image -->
                 <div class='row'>
-                    <div class='col-md-12 text-center' id='right-content'>
+                    <div class='col-md-12 text-center' id='right-content'> <!---Contents of the right side -->
                         Up <span>skill</span> <br>
                         <div>or <br></div>
                         Go <span>Extinct</span>
@@ -79,27 +79,38 @@
                 </div>
                                 
                 
-            </div>
-        </div>
-        <div class='row'>
-            <div class='col-md-12 ' id='cookie-container'>
+            </div> <!--end of right wrapper-->
+        </div> <!--end of row for left+right wrapper in main container-->
+        <div class='row'> <!---New row for cookie prompt -->
+            <div class='col-md-12 ' id='cookie-container'>  <!---cotainer for cookie prompt -->
                 <div class='row'>
-                    <div class='col-md-7' id='cookie-content'>
+                    <div class='col-md-7' id='cookie-content'> <!---cotainer for cookie info content on the left side of the container-->
                         We use cookies to improve user experience. In other words, you are the product and we will sell you.
                         For more information on our subtle manipulation techinques <a href='' target='_blank'>click here</a>. 
                     </div>
-                    <div class='col-md-5 ml-auto' id='cookie-button'>
+                    <div class='col-md-5 ml-auto' id='cookie-button'> <!---cotainer for cookie accept and disable button-->
                        <span><a href='#'>disable cookies</a>
                         <button>ACCEPT COOKIES AND CLOSE THIS WINDOW</button></span>
                     </div>
                 </div>
                 
+            </div> <!--end of cookie container-->
+
+
+        </div>    <!--end of cookie row--> 
+
+        <div class="card " style="width: 18rem;">
+            <img src="https://media.giphy.com/media/l4CDkKoB2xx7HS608/source.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div id='loading-bar'>
+                  <div id='loading-prog' class='text-center'>
+                        
+                  </div>
+              </div>
             </div>
+        </div>
 
-
-        </div>    
-
-    </div>    
+    </div>    <!--end of main container-->
             
        
     
