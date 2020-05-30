@@ -171,6 +171,7 @@ footer{
     top: 30%;
     margin-top:-30px;
     border:1px thick black;
+    display: none;
   
     
     
@@ -185,7 +186,7 @@ footer{
     width: auto;
     
     height:2em;
-    overflow: auto;
+    overflow: hidden;
     color:rgb(10, 122, 156);
     background-color: red;
     background-image: linear-gradient(45deg, white 25%, transparent 25.5%, transparent 50%, white 50.5%, white 75%, transparent 75.5%, transparent);
@@ -193,14 +194,25 @@ footer{
     font-size:2em;
     font-weight: bold;
     
+    
     /* animation-name: widthChanger;
     animation-duration: 10s;
     animation-fill-mode: forwards;
     animation-delay: 1s; */
 }
 
-
 /* @keyframes widthChanger{
     from{width:0%;}
     to{width:100%;}
 } */
+
+
+#load-msg{
+    position:absolute;
+    top:45%;
+    left:40%;
+    margin-top:-35px;
+    margin-left:-35px;
+    font-size: 2.5em;
+    color:rgb(10, 122, 156);
+}
