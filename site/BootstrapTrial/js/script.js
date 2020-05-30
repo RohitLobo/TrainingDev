@@ -30,7 +30,7 @@ $(window).ready(function() {
     
         }
         
-        setInterval(loadBarAnime,50);
+        setInterval(loadBarAnime,75);
 
 
 
