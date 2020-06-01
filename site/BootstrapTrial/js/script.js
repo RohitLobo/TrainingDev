@@ -32,12 +32,25 @@ $(window).ready(function() {
         
         setInterval(loadBarAnime,75);
 
+        
 
+        
 
 
 
 
     });
+
+    
+
+        document.querySelector("#submit-btn").addEventListener('click', function(event){
+                var inpMail=document.querySelector("#InputEmail").value
+                var inpPass=document.querySelector("#InputPassword").value
+                if((inpPass=='') || (inpMail="")){
+                    window.alert("Make sure the email and password fields are completed")
+                }
+        });
+    
    
     // $("#loading-prog").append($("#loading-prog").width())
      

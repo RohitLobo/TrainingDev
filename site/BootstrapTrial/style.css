@@ -16,11 +16,18 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(76,
 }
 
 #right-content span{
-    color:rgb(255, 229, 81)
+    color:rgb(255, 229, 81);
+    display: inline-block;
+    animation:shakeY;
+    animation-duration: 3s;
+     
 }
 
 #right-content div{
     color:#DB654A;
+    animation:shakeX;
+    animation-duration: 3s;
+    
 }
 
 
@@ -52,6 +59,7 @@ form div label{
 
 form button{
 width:100%;
+
 }
 
 #links{
