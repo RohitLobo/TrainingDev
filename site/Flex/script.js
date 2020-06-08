@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded",function(event){
     
    document.querySelector("p").style.backgroundColor=colorSelector();
    
-   
+   //Random color changer
    function colorSelector(){
     let hexaNumbers='0123456789ABCDEF'
     let arr=[]
