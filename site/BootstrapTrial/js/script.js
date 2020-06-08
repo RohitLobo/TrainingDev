@@ -51,7 +51,34 @@ $(window).ready(function() {
                 }
         });
     
-   
+        
+
+        const xhr=new XMLHttpRequest();
+        
+        xhr.onload= function(){
+            
+            if(this.status===200){
+                try{
+                    const resObj=JSON.parse(this.response)
+                    console.log(resObj.name);
+                }
+                catch(err){
+                    console.warn("error in parsing data")
+                }
+                
+            }
+            else{
+            
+                console.warn("Error retrieving page")
+            }
+        }
+
+        xhr.open("get",'data.json');
+        xhr.send();
+
+        
+
+
     // $("#loading-prog").append($("#loading-prog").width())
      
     

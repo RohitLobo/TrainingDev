@@ -2,10 +2,16 @@ h1{
     text-align: center;
 }
 
+content{
+    
+}
+
 .content p{
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
+    
+    
 }
 
 img{
