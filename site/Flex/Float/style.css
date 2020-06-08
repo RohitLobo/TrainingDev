@@ -1,3 +1,11 @@
+section{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    
+}
+
 h1{
     text-align: center;
 }
@@ -15,3 +23,10 @@ img{
     float: right;
     margin-left: 1em;
 }
+
+#btn-container{
+    width:auto;
+    /* height: 25%; */
+    
+}    
+
