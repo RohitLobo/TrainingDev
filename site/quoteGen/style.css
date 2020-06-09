@@ -42,7 +42,9 @@ body{
     float: left;
     font-size: 2em;
     font-family: 'Handlee', cursive;
-    transition-duration: 1000ms;
+    /* transition-duration: 10000ms; */
+    animation-timing-function: ease-in;
+    text-align: center;
 }
     
 
@@ -85,6 +87,7 @@ transition-duration: 1000ms;
 }
 
 #new-quote{
+    -webkit-appearance: inherit ; 
     position: absolute;
     top:75%;
     left:65%;
@@ -96,4 +99,18 @@ transition-duration: 1000ms;
     border-radius: 5%;
     border:1px white solid;
     padding:15px;
+    
+    
+    
+   
+}
+
+#new-quote:hover{
+    opacity: 0.8;
+    transition-duration: 100ms;
+}
+
+#new-quote:focus{
+    border:2px red solid;
+    
 }

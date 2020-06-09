@@ -1,6 +1,7 @@
 window.addEventListener("DOMContentLoaded", function (event) {
     let mainSelector=document.querySelector("#main-container");
     let pSelector=document.querySelector("#text span");
+    let authorSelector=document.querySelector("#author")
     let socialLinks=document.querySelector("#tweet-quote")
     let author=document.querySelector("#author")
     let newQuote=document.querySelector("#new-quote")
@@ -26,7 +27,8 @@ window.addEventListener("DOMContentLoaded", function (event) {
 
                
                 let i = 0;
-                //function to generate random quotes+ colors ;called when button is clicked.
+
+                //function to generate random quotes+colors ;called when button is clicked.
                 random = function () {
                     
                     //Random Quote generator
@@ -34,14 +36,32 @@ window.addEventListener("DOMContentLoaded", function (event) {
                     while (i <= objLength) {
                         i = Math.floor(Math.random() * (objLength - 1 + 1))
                         
-                        // return (jsTxt['quotes' + i]);
-                        return pSelector.textContent=(jsTxt['quotes' + i]);
+                        
+                        console.log("Quote generetor");
+                        return pSelector.textContent=(jsTxt['quotes' + i].quote);
+
+                        }
+
+
 
                     }
 
+                    console.log(i);
+                    
 
-
-                }
+                    function randomAuthor(){
+                        while (i <= objLength) {
+                            
+                            
+                            
+                            console.log("Quote generetor");
+                            return authorSelector.textContent='-'+ (jsTxt['quotes' + i].author);
+    
+                            }
+    
+    
+    
+                        }
 
                 ////Random color generator
 
@@ -56,13 +76,15 @@ window.addEventListener("DOMContentLoaded", function (event) {
                         arr.push(colorSelect);
             
                     }
-            
+                    console.log("color generetor");
                     let finalColor = arr.join("");
                     return (('#' + finalColor));
                 }
-            //function calls    
+            //function call for random color and random color assignement    
+            
+            randomQuote();
+            randomAuthor();
             mainSelector.style.backgroundColor=randomColor(); 
-            randomQuote();  
             pSelector.style.color= mainSelector.style.backgroundColor;
             socialLinks.style.color= mainSelector.style.backgroundColor;
             author.style.color= mainSelector.style.backgroundColor;
@@ -71,10 +93,10 @@ window.addEventListener("DOMContentLoaded", function (event) {
             quotesEnd.style.color= mainSelector.style.backgroundColor;
 
             }
+            //End of random function 
 
-
-                let btnSelector = document.querySelector("#new-quote")         
-                btnSelector.addEventListener("click",random);
+            let btnSelector = document.querySelector("#new-quote")         
+            btnSelector.addEventListener("click",random);
                 
                 
                 
