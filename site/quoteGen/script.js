@@ -5,8 +5,8 @@ window.addEventListener("DOMContentLoaded", function (event) {
     let socialLinks=document.querySelector("#tweet-quote")
     let author=document.querySelector("#author")
     let newQuote=document.querySelector("#new-quote")
-    let quotesStart=document.querySelector("#quotesStart");
-    let quotesEnd=document.querySelector("#quotesEnd");
+    let quotesSelect=document.querySelectorAll("#quotes")
+    
     
     
     
@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
                         i = Math.floor(Math.random() * (objLength - 1 + 1))
                         
                         
-                        console.log("Quote generetor");
+                        
                         return pSelector.textContent=(jsTxt['quotes' + i].quote);
 
                         }
@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
 
                     }
 
-                    console.log(i);
+                    
                     
 
                     function randomAuthor(){
@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
                             
                             
                             
-                            console.log("Quote generetor");
+                            
                             return authorSelector.textContent='-'+ (jsTxt['quotes' + i].author);
     
                             }
@@ -76,7 +76,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
                         arr.push(colorSelect);
             
                     }
-                    console.log("color generetor");
+                    
                     let finalColor = arr.join("");
                     return (('#' + finalColor));
                 }
@@ -91,8 +91,11 @@ window.addEventListener("DOMContentLoaded", function (event) {
             socialLinks.style.color= mainSelector.style.backgroundColor;
             author.style.color= mainSelector.style.backgroundColor;
             newQuote.style.backgroundColor= mainSelector.style.backgroundColor;
-            quotesStart.style.color= mainSelector.style.backgroundColor;
-            quotesEnd.style.color= mainSelector.style.backgroundColor;
+            
+            
+            quotesSelect[0].style.color= mainSelector.style.backgroundColor;
+            quotesSelect[1].style.color= mainSelector.style.backgroundColor;
+            
 
             }
 
