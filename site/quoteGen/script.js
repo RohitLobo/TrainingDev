@@ -80,7 +80,9 @@ window.addEventListener("DOMContentLoaded", function (event) {
                     let finalColor = arr.join("");
                     return (('#' + finalColor));
                 }
-            //function call for random color and random color assignement    
+
+
+            //function call for random color/quote/author and color assignement    
             
             randomQuote();
             randomAuthor();
@@ -93,6 +95,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
             quotesEnd.style.color= mainSelector.style.backgroundColor;
 
             }
+
             //End of random function 
 
             let btnSelector = document.querySelector("#new-quote")         
