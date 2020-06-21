@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
     
     
     
-    
+    console.log(pSelector.scrollHeight)
 
 
     
@@ -86,15 +86,19 @@ window.addEventListener("DOMContentLoaded", function (event) {
             
             randomQuote();
             randomAuthor();
-            mainSelector.style.backgroundColor=randomColor(); 
+            let root = document.documentElement;
+            root.style.setProperty('--dynamicColor',randomColor())
+
+
+
+            /* old code (refactored with css variables)*/
+            /*mainSelector.style.backgroundColor=randomColor(); 
             pSelector.style.color= mainSelector.style.backgroundColor;
             socialLinks.style.color= mainSelector.style.backgroundColor;
             author.style.color= mainSelector.style.backgroundColor;
-            newQuote.style.backgroundColor= mainSelector.style.backgroundColor;
-            
-            
+            newQuote.style.backgroundColor= mainSelector.style.backgroundColor;    
             quotesSelect[0].style.color= mainSelector.style.backgroundColor;
-            quotesSelect[1].style.color= mainSelector.style.backgroundColor;
+            quotesSelect[1].style.color= mainSelector.style.backgroundColor;*/
             
 
             }

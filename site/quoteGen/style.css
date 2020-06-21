@@ -5,13 +5,17 @@
 
 }
 
+:root{
+ --dynamicColor:crimson;
+}
+
 body{
     width:100vw;
     height:100vh;
 }
 
 #main-container{
-    background-color: crimson;
+    background-color:var(--dynamicColor, brown);
     width:100%;
     height:100%;
     position: relative;
@@ -20,43 +24,54 @@ body{
 
 #quote-box{
     background-color:white;
-    width:50% ;
+    width:50%;
     height:50%;
+    padding: 5px 5px;
     left:25%;
     top:30%;
     border-radius: 2.5%;
     position: relative;
-    justify-content: center;
+    max-height:100%;
+    max-width:100%;
+    
 }
 
 
 
 #text{  
+    
     position:absolute;
-    top:15%;
+    top:10%;
     font-size: 2em;
     font-family: 'Handlee', cursive;
     /* transition-duration: 10000ms; */
     animation-timing-function: ease-in;
-    text-align: center;
-    align-content: center;
-    /* text-overflow:clip; */
+    text-align: justify;
+    margin:2px 2px;
+    color:var(--dynamicColor, brown);
+    
+    
+    
+    max-width: 100%;
+    max-height:50%;
+    overflow: auto;
+   
+   
 }
     
-
 
 #author{
     position:absolute;
     bottom: 30%;
     right:15%;
-    color:crimson;
+    color:var(--dynamicColor, brown);
     font-size: 1.5em;
 }
 
 
 #tweet-quote{
      
-    color:crimson;
+    color:var(--dynamicColor, brown);
     background-color: white;
     border-radius: 10%;
     position: absolute;
@@ -74,7 +89,7 @@ body{
 #quotes
 {
 transition-duration: 1000ms;
-color: crimson;
+color:var(--dynamicColor, brown);
 }
 
 
@@ -87,7 +102,7 @@ color: crimson;
     width:auto;
     height:auto;
     font-size:1em;
-    background-color:crimson;
+    background-color:var(--dynamicColor, brown);
     color:white;
     border-radius: 5%;
     border:1px white solid;
@@ -103,7 +118,7 @@ color: crimson;
     transition-duration: 100ms;
 }
 
-#new-quote:focus{
-    border:2px red solid;
-    
+@media (max-height:50%){
+
+
 }
