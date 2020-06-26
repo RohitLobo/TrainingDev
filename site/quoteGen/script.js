@@ -6,10 +6,10 @@ window.addEventListener("DOMContentLoaded", function (event) {
     let author=document.querySelector("#author")
     let newQuote=document.querySelector("#new-quote")
     let quotesSelect=document.querySelectorAll("#quotes")
+    let hexaNumbers = '0123456789ABCDEF'
     
     
-    
-    console.log(pSelector.scrollHeight)
+
 
 
     
@@ -35,11 +35,11 @@ window.addEventListener("DOMContentLoaded", function (event) {
                     function randomQuote(){
                     while (i <= objLength) {
                         i = Math.floor(Math.random() * (objLength - 1 + 1))
-                        
-                        
-                        
-                        return pSelector.textContent=(jsTxt['quotes' + i].quote);
-
+                        let quotesAssign=(jsTxt['quotes' + i].quote);
+                        let authorAssign='-'+ (jsTxt['quotes' + i].author);
+                        pSelector.textContent=quotesAssign;
+                        authorSelector.textContent=authorAssign;
+                        return (pSelector.textContent,authorSelector.textContent)
                         }
 
 
@@ -49,24 +49,12 @@ window.addEventListener("DOMContentLoaded", function (event) {
                     
                     
 
-                    function randomAuthor(){
-                        while (i <= objLength) {
-                            
-                            
-                            
-                            
-                            return authorSelector.textContent='-'+ (jsTxt['quotes' + i].author);
-    
-                            }
-    
-    
-    
-                        }
+                   
 
                 ////Random color generator
 
                 function randomColor() {
-                    let hexaNumbers = '0123456789ABCDEF'
+                    
                     let arr = []
                     for (let i = 0; i < 6; i++) {
                         let randomIndex = (Math.floor(Math.random() * (15 - 0) + 0));
@@ -82,23 +70,19 @@ window.addEventListener("DOMContentLoaded", function (event) {
                 }
 
 
+                function randomCompColor(){
+                    console.log(hexaNumbers);
+                }
+
             //function call for random color/quote/author and color assignement    
             
             randomQuote();
-            randomAuthor();
+            randomCompColor();
             let root = document.documentElement;
             root.style.setProperty('--dynamicColor',randomColor())
+            
 
 
-
-            /* old code (refactored with css variables)*/
-            /*mainSelector.style.backgroundColor=randomColor(); 
-            pSelector.style.color= mainSelector.style.backgroundColor;
-            socialLinks.style.color= mainSelector.style.backgroundColor;
-            author.style.color= mainSelector.style.backgroundColor;
-            newQuote.style.backgroundColor= mainSelector.style.backgroundColor;    
-            quotesSelect[0].style.color= mainSelector.style.backgroundColor;
-            quotesSelect[1].style.color= mainSelector.style.backgroundColor;*/
             
 
             }
