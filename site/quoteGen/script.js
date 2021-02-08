@@ -71,15 +71,27 @@ window.addEventListener("DOMContentLoaded", function (event) {
 
 
                 function randomCompColor(){
-                    console.log(hexaNumbers);
+                    let backColor=root.style.getPropertyValue('--dynamicColor');
+                    // let firstPair=backColor.substr(1,2);
+                    
+                    // let thirdPair=backColor.substr(5,6);
+                    // let secondPair=backColor.substring(3,5);
+                    // console.log(backColor,firstPair,secondPair,thirdPair)
+
+                                       
+
+                    
+
                 }
 
+                
             //function call for random color/quote/author and color assignement    
             
             randomQuote();
-            randomCompColor();
+    
             let root = document.documentElement;
             root.style.setProperty('--dynamicColor',randomColor())
+            randomCompColor();
             
 
 
